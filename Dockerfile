@@ -35,7 +35,7 @@ RUN trivy --version
 # Checkov scanner
 RUN pip3 install checkov packaging==21.3 && checkov --version
 
-RUN apk del gcc python3‑dev
+RUN apk del gcc python3-dev
 
 COPY --from=builder /build/src/bin/dashboard /bin/helm-dashboard
 
