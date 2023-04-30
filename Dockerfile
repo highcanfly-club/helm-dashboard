@@ -3,7 +3,6 @@ FROM golang as builder
 
 
 ENV GOOS=linux
-ENV GOARCH=amd64
 ENV CGO_ENABLED=0
 
 WORKDIR /build
@@ -13,7 +12,7 @@ COPY go.sum ./
 COPY main.go ./
 RUN go mod download
 
-ARG VER=0.0.0
+ARG VER=1.10.5
 ENV VERSION=${VER}
 
 ADD . src

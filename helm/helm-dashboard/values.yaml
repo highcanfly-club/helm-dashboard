@@ -4,7 +4,7 @@ replicaCount: 1
 debug: false
 
 image:
-  repository: komodorio/helm-dashboard
+  repository: highcanfly/helm-dashboard
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""

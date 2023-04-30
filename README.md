@@ -9,10 +9,13 @@
 <p align="center">A simplified way of working with Helm.</p>
 
 
-![GitHub contributors](https://img.shields.io/github/contributors/komodorio/helm-dashboard) [![GitHub issues](https://img.shields.io/github/issues-raw/komodorio/helm-dashboard)](https://github.com/komodorio/helm-dashboard/issues) ![GitHub stars](https://img.shields.io/github/stars/komodorio/helm-dashboard?style=social) ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/komodorio/helm-dashboard) ![GitHub pull requests](https://img.shields.io/github/issues-pr/komodorio/helm-dashboard) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/komodorio/helm-dashboard)](https://github.com/komodorio/helm-dashboard/releases) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/komodorio/helm-dashboard) [![GitHub license](https://img.shields.io/github/license/komodorio/helm-dashboard)](https://github.com/komodorio/helm-dashboard)
+![GitHub contributors](https://img.shields.io/github/contributors/highcanfly-club/helm-dashboard) [![GitHub issues](https://img.shields.io/github/issues-raw/highcanfly-club/helm-dashboard)](https://github.com/highcanfly-club/helm-dashboard/issues) ![GitHub stars](https://img.shields.io/github/stars/highcanfly-club/helm-dashboard?style=social) ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/highcanfly-club/helm-dashboard) ![GitHub pull requests](https://img.shields.io/github/issues-pr/highcanfly-club/helm-dashboard) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/highcanfly-club/helm-dashboard)](https://github.com/highcanfly-club/helm-dashboard/releases) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/highcanfly-club/helm-dashboard) [![GitHub license](https://img.shields.io/github/license/highcanfly-club/helm-dashboard)](https://github.com/highcanfly-club/helm-dashboard)
 
 <kbd>[<img src="images/screenshot.png" style="width: 100%; border: 1px solid silver;" border="1" alt="Screenshot">](images/screenshot.png)</kbd>
 
+
+## What differs ?
+This build of _Helm Dashboard_ aims to be used on linux arm64 kubernetes platforms.
 
 ## Description
 
@@ -46,7 +49,7 @@ Download the appropriate [release package](https://github.com/komodorio/helm-das
 To install dashboard as Helm plugin, simply run Helm command:
 
 ```shell
-helm plugin install https://github.com/komodorio/helm-dashboard.git
+helm plugin install https://github.com/highcanfly-club/helm-dashboard.git
 ```
 
 To update the plugin to the latest version, run:
@@ -92,7 +95,7 @@ If you want to increase the logging verbosity and see all the debug info, use th
 
 ### Deploying Helm Dashboard on Kubernetes
 
-The official helm chart is [available here](https://github.com/komodorio/helm-charts/blob/master/charts/helm-dashboard)
+Our helm chart is [available here](https://github.com/highcanfly-club/helm-repo/blob/master/charts/helm-dashboard)
 
 ## Selected Features
 
@@ -132,22 +135,6 @@ You can request scanning of the specific k8s resource in your cluster:
 If you want to validate the k8s manifest prior to installing/reconfiguring a Helm chart, look for "Scan for Problems"
 button at the bottom of the dialog:
 ![](images/screenshot_scan_manifest.png)
-
-## Support Channels
-
-We have two main channels for supporting the Helm Dashboard
-users: [Slack community](https://komodorkommunity.slack.com) for general conversations
-and [GitHub issues](https://github.com/komodorio/helm-dashboard/issues) for real bugs.
-
-## Contributing
-
-Kindly read our [Contributing Guide](CONTRIBUTING.md) to learn and understand about our development process, how to propose bug fixes and improvements, and how to build and test your changes to Helm Dashboard. <br>
-
-## Contributors
-
-<a href="https://github.com/komodorio/helm-dashboard/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=komodorio/helm-dashboard" />
-</a>
 
 ## Local Dev Testing
 
