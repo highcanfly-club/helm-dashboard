@@ -22,7 +22,7 @@ WORKDIR /build/src
 RUN make build
 
 # Stage - runner
-FROM alpine
+FROM alpine:latest
 EXPOSE 8080
 
 # Python
