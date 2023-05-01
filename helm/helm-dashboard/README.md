@@ -3,9 +3,9 @@
 ## TL;DR;
 
 ```bash
-helm repo add komodorio https://helm-charts.komodor.io
+helm repo add highcanfly https://helm-repo.highcanfly.club/
 helm repo update
-helm upgrade --install helm-dashboard komodorio/helm-dashboard
+helm upgrade --install helm-dashboard highcanfly/helm-dashboard
 ```
 
 ## Introduction
@@ -23,7 +23,7 @@ While installed inside cluster, Helm Dashboard will run some additional backgrou
 To install the chart with the release name `helm-dashboard`:
 
 ```bash
-helm install helm-dashboard .
+helm install highcanfly/helm-dashboard .
 ```
 
 The command deploys Helm Dashboard on the Kubernetes cluster in the default configuration. The [Parameters](#parameters) section lists the parameters that can be configured during installation.
