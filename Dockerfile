@@ -41,4 +41,4 @@ COPY --from=builder /build/src/bin/dashboard /bin/helm-dashboard
 
 ENTRYPOINT ["/bin/helm-dashboard", "--no-browser", "--bind=0.0.0.0", "--port=8080"]
 
-# docker build . -t komodorio/helm-dashboard:0.0.0 && kind load docker-image komodorio/helm-dashboard:0.0.0
+# docker build . -t highcanfly/helm-dashboard:0.0.0 && kind load docker-image highcanfly/helm-dashboard:0.0.0
